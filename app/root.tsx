@@ -5,7 +5,7 @@ import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
-	title: "New Remix App",
+	title: "Karel Verschraegen",
 	viewport: "width=device-width,initial-scale=1",
 });
 
