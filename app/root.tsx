@@ -9,7 +9,13 @@ export const meta: MetaFunction = () => ({
 	viewport: "width=device-width,initial-scale=1",
 });
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+export const links: LinksFunction = () => [
+	{ rel: "stylesheet", href: styles },
+	{
+		rel: "stylesheet",
+		href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
+	},
+];
 
 export default function App() {
 	return (
