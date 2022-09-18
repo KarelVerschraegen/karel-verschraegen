@@ -231,7 +231,7 @@ const Index: FC = () => {
 								</Text>
 
 								<Image
-									className="p-4 border border-gray-200 rounded shadow"
+									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
 									alt="Wisserke in action on a GitHub pull request"
 									loading="lazy"
 									src={Wisserke}
@@ -262,7 +262,7 @@ const Index: FC = () => {
 								</summary>
 
 								<video
-									className="p-4 border border-gray-200 rounded shadow"
+									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
 									controls
 									poster={LiquidEditorFirstFrame}
 									src={LiquidEditor}
@@ -290,7 +290,7 @@ const Index: FC = () => {
 								</summary>
 
 								<video
-									className="p-4 border border-gray-200 rounded shadow"
+									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
 									controls
 									poster={EquipmentListFirstFrame}
 									src={EquipmentList}
