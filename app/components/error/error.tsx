@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 import { KarelFunny } from "~/assets/images";
-import { Grid, Heading, Image, Link, Text, TextStyle } from "~/ui";
+import { Grid, Heading, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
 
 interface ErrorProps {
 	error: Error;
@@ -10,7 +10,7 @@ interface ErrorProps {
 export const Error: FC<ErrorProps> = ({ error }) => {
 	return (
 		<Grid className="grid-cols-2 gap-8">
-			<article className="prose prose-slate dark:prose-invert">
+			<TextContainer>
 				<Heading element="h1">
 					<TextStyle variation="feisty">Whoopsie</TextStyle>, it looks like Karel made a mistake!
 				</Heading>
@@ -24,7 +24,7 @@ export const Error: FC<ErrorProps> = ({ error }) => {
 				</Text>
 
 				<TextStyle variation="subdued">{error.message}</TextStyle>
-			</article>
+			</TextContainer>
 
 			<Image
 				alt="Funny Karel Verschraegen"

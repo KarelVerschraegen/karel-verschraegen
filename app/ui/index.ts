@@ -6,4 +6,5 @@ export { Link } from "./link/link";
 export { NavLink } from "./nav-link/nav-link";
 export { Heading } from "./typography/heading/heading";
 export { Text } from "./typography/text/text";
+export { TextContainer } from "./typography/text-container/text-container";
 export { TextStyle } from "./typography/text-style/text-style";
