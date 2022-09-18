@@ -28,7 +28,7 @@ export const Error: FC<ErrorProps> = ({ error }) => {
 
 			<Image
 				alt="Funny Karel Verschraegen"
-				className="relative w-full max-w-lg transition-all opacity-100 group-hover:opacity-0 rounded-xl group-hover:rotate-3"
+				className="w-full max-w-lg rounded-xl"
 				src={KarelFunny}
 				width={512}
 				height={512}
