@@ -1,5 +1,5 @@
-import { NavLink as RemixNavLink } from "@remix-run/react";
 import type { NavLinkProps } from "@remix-run/react";
+import { NavLink as RemixNavLink } from "@remix-run/react";
 import type { FC, ReactNode } from "react";
 
 interface Props extends NavLinkProps {

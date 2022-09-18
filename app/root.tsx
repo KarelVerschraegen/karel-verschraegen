@@ -1,9 +1,9 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
-import styles from "./styles/app.css";
-import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
+import { Header } from "./components/header/header";
+import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => {
 	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digitally!";

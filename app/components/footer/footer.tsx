@@ -1,5 +1,5 @@
 import { SOCIALS } from "~/constants/socials";
-import { Text, Icon, TextStyle, Link } from "~/ui";
+import { Icon, Link,Text, TextStyle } from "~/ui";
 
 export const Footer = () => {
 	return (

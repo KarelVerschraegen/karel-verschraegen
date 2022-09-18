@@ -1,4 +1,4 @@
-import { GitHub, Email, Instagram, LinkedIn, Twitter } from "~/assets/icons";
+import { Email, GitHub, Instagram, LinkedIn, Twitter } from "~/assets/icons";
 
 export const SOCIALS = [
 	{

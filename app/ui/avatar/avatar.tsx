@@ -1,4 +1,5 @@
 import type { FC, ImgHTMLAttributes } from "react";
+
 import { Image } from "~/ui";
 
 type Size = "small" | "medium" | "large";

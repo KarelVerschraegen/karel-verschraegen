@@ -1,7 +1,8 @@
 import type { FC } from "react";
+
 import { Karel, KarelFunny } from "~/assets/images";
-import { Icon, Image, Heading, Text, Grid, TextStyle, Link } from "~/ui";
 import { SOCIALS } from "~/constants/socials";
+import { Grid, Heading, Icon, Image, Link,Text, TextStyle } from "~/ui";
 
 const Index: FC = () => {
 	return (

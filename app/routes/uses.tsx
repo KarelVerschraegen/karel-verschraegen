@@ -1,4 +1,4 @@
-import { Text, Heading, Grid, TextStyle } from "~/ui";
+import { Grid, Heading, Text, TextStyle } from "~/ui";
 
 const Uses = () => {
 	return (
