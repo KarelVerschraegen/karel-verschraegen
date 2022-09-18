@@ -14,11 +14,15 @@ const Index: FC = () => {
 								alt="Funny Karel Verschraegen"
 								src={KarelFunny}
 								className="absolute inset-0 w-full max-w-lg transition-all opacity-0 group-hover:opacity-100 rounded-xl group-hover:rotate-3"
+								width={512}
+								height={512}
 							/>
 							<Image
 								alt="Karel Verschraegen"
 								src={Karel}
 								className="relative w-full max-w-lg transition-all opacity-100 group-hover:opacity-0 rounded-xl group-hover:rotate-3"
+								width={512}
+								height={512}
 							/>
 						</div>
 					</Grid.Item>
