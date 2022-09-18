@@ -15,6 +15,7 @@ specifiers:
   concurrently: ^7.3.0
   eslint: ^8.20.0
   eslint-config-prettier: ^8.5.0
+  eslint-plugin-simple-import-sort: ^8.0.0
   postcss: ^8.4.16
   prettier: ^2.7.1
   react: ^18.2.0
@@ -41,6 +42,7 @@ devDependencies:
   concurrently: 7.3.0
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
+  eslint-plugin-simple-import-sort: 8.0.0_eslint@8.23.0
   postcss: 8.4.16
   prettier: 2.7.1
   tailwindcss: 3.1.8_postcss@8.4.16
@@ -3874,6 +3876,14 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+    dev: true
+
+  /eslint-plugin-simple-import-sort/8.0.0_eslint@8.23.0:
+    resolution: {integrity: sha512-bXgJQ+lqhtQBCuWY/FUWdB27j4+lqcvXv5rUARkzbeWLwea+S5eBZEQrhnO+WgX3ZoJHVj0cn943iyXwByHHQw==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.23.0
     dev: true
 
   /eslint-plugin-testing-library/5.6.0_yqf6kl63nyoq5megxukfnom5rm:
