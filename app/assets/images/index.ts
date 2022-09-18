@@ -1,4 +1,4 @@
-import Karel from "./Karel.jpg";
-import KarelFunny from "./KarelFunny.jpg";
+import Karel from "./karel.jpg";
+import KarelFunny from "./karel-funny.jpg";
 
 export { Karel, KarelFunny };
