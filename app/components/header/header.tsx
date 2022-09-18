@@ -6,7 +6,6 @@ import { Avatar, Heading, NavLink, TextStyle } from "~/ui";
 const ROUTES = [
 	{ name: "About", to: "/#about" },
 	{ name: "Experience", to: "/#experience" },
-	{ name: "Uses", to: "/uses" },
 	{ name: "Contact", to: "/#contact" },
 ];
 
