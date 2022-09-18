@@ -35,8 +35,8 @@ export const links: LinksFunction = () => [
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<div className="flex flex-col items-center sm:px-8 dark:bg-black bg-slate-100">
-			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl dark:ring-1 dark:ring-zinc-300/20 dark:bg-zinc-900 md:px-16 xl:px-24">
+		<div className="flex flex-col items-center sm:px-8 dark:bg-slate-900/95 bg-slate-100">
+			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl dark:bg-slate-900 md:px-16 xl:px-24">
 				<div className="flex flex-col gap-16">
 					<Header />
 
