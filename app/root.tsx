@@ -2,6 +2,7 @@ import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import type { FC, PropsWithChildren } from "react";
 
+import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import styles from "./styles/app.css";
@@ -71,6 +72,20 @@ const App: FC = () => {
 		<Document>
 			<Layout>
 				<Outlet />
+			</Layout>
+		</Document>
+	);
+};
+
+interface ErrorBoundaryProps {
+	error: Error;
+}
+
+export const ErrorBoundary: FC<ErrorBoundaryProps> = ({ error }) => {
+	return (
+		<Document>
+			<Layout>
+				<Error error={error} />
 			</Layout>
 		</Document>
 	);
