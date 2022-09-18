@@ -19,7 +19,7 @@ export const Footer = () => {
 			<ul className="flex flex-row gap-4">
 				{SOCIALS.map((social) => (
 					<li key={social.name}>
-						<Link to={social.url}>
+						<Link aria-label={social.name} to={social.url} external>
 							<Icon className="hover:text-teal-500" size="medium" source={social.logo} />
 						</Link>
 					</li>

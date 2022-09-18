@@ -175,7 +175,7 @@ const Index: FC = () => {
 						<ul className="flex flex-row gap-4 lg:gap-8">
 							{SOCIALS.map((social) => (
 								<li key={social.name}>
-									<Link to={social.url} external>
+									<Link to={social.url} aria-label={social.name} external>
 										<Icon className="hover:text-cyan-500" size="large" source={social.logo} />
 									</Link>
 								</li>
