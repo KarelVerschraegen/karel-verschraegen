@@ -12,14 +12,14 @@ export const Error: FC<ErrorProps> = ({ error }) => {
 		<Grid className="grid-cols-2 gap-8">
 			<article className="prose prose-slate">
 				<Heading element="h1">
-					<TextStyle variation="fancy">Whoopsie</TextStyle>, it looks like Karel made a mistake!
+					<TextStyle variation="feisty">Whoopsie</TextStyle>, it looks like Karel made a mistake!
 				</Heading>
 
 				<Text>
 					We'll try to fix this one as soon as possible! If this issue does not get resolved in time, feel
 					free to{" "}
 					<Link to="mailto:karelverschraegenbiz@gmail.com">
-						<TextStyle variation="fancy">reach out to me!</TextStyle>
+						<TextStyle variation="feisty">reach out to me!</TextStyle>
 					</Link>
 				</Text>
 

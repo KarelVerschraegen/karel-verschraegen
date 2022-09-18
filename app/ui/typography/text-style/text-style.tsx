@@ -1,6 +1,6 @@
 import type { FC, HTMLAttributes } from "react";
 
-type Variation = "fancy" | "subdued";
+type Variation = "fancy" | "feisty" | "subdued";
 
 interface Props extends HTMLAttributes<HTMLSpanElement> {
 	variation: Variation;
@@ -8,6 +8,7 @@ interface Props extends HTMLAttributes<HTMLSpanElement> {
 
 const VARIATIONS: Record<Variation, string> = {
 	fancy: "text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500",
+	feisty: "text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500",
 	subdued: "text-slate-500",
 };
 
