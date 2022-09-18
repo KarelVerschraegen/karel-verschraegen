@@ -1,6 +1,7 @@
 import type { FC } from "react";
 
-import { Karel, KarelFunny } from "~/assets/images";
+import { Karel, KarelFunny, Wisserke } from "~/assets/images";
+import { EquipmentList, EquipmentListFirstFrame, LiquidEditor, LiquidEditorFirstFrame } from "~/assets/videos";
 import { SOCIALS } from "~/constants/socials";
 import { Grid, Heading, Icon, Image, Link, Text, TextStyle } from "~/ui";
 
@@ -166,6 +167,138 @@ const Index: FC = () => {
 						</Grid.Item>
 					</Grid>
 				</div>
+			</section>
+
+			<section id="projects">
+				<Heading element="h2" className="mb-8">
+					Some of the projects I have worked on!
+				</Heading>
+
+				<ul className="flex flex-col gap-16">
+					<li>
+						<article className="prose prose-slate">
+							<Heading element="h3">
+								<TextStyle variation="fancy">This website</TextStyle>
+							</Heading>
+
+							<Text>
+								I have always wanted play with Remix and this seemed like the perfect excuse to give it
+								a shot. Making this website has definitely pushed me out of my comfort zone. On a daily
+								basis, designers create beautiful interfaces for me to build, but now it became my
+								responsibility! I am really happy with the end result and will use this as a playground
+								to try out new technologies.
+							</Text>
+
+							<Text>
+								Interested in the code? You can check it out on{" "}
+								<Link to="https://github.com/KarelVerschraegen/karel-verschraegen" external>
+									<TextStyle variation="fancy">GitHub.</TextStyle>
+								</Link>
+							</Text>
+						</article>
+					</li>
+
+					<li>
+						<article className="prose prose-slate">
+							<Heading element="h3">
+								<TextStyle variation="fancy">Wisserke</TextStyle>
+							</Heading>
+
+							<Text>
+								Wisserke is a <i>very small</i> GitHub bot that I wrote to keep my colleagues
+								entertained. The name 'Wisserke' is a reference to a Belgian TV show called 'Het
+								Eiland', where a developer tries to delete data from someone's personal computer.
+								Whenever you create a pull request, Wisserke will inspect your deletions and if they
+								exceed a certain threshold, it will post a GIF on your pull request.
+							</Text>
+
+							<Text>
+								Interested in the code? You can check it out on{" "}
+								<Link to="https://github.com/KarelVerschraegen/wisserke" external>
+									<TextStyle variation="fancy">GitHub.</TextStyle>
+								</Link>
+							</Text>
+
+							<details>
+								<summary>
+									<TextStyle variation="fancy">Learn more</TextStyle>
+								</summary>
+
+								<Text>
+									Wisserke uses Probot to communicate with the GitHub API. It is hosted on Heroku and
+									can be enabled on every GitHub repository! Below is an example of the comments
+									'Wisserke' will post:
+								</Text>
+
+								<Image
+									className="p-4 border border-gray-200 rounded shadow"
+									alt="Wisserke in action on a GitHub pull request"
+									loading="lazy"
+									src={Wisserke}
+									height={500}
+									width={500}
+								/>
+							</details>
+						</article>
+					</li>
+
+					<li>
+						<article className="prose prose-slate">
+							<Heading element="h3">
+								<TextStyle variation="fancy">Liquid template editor</TextStyle> @ Cheqroom
+							</Heading>
+
+							<Text>
+								From ideation, to designing and prototyping in just two days! During a hackathon at
+								Cheqroom, a colleague and I created a prototype for a PDF template editor based on
+								Shopify's Liquid templating language. At Cheqroom, users can create and manage custom
+								PDF templates but this is a very cumbersome process. This prototype demonstrates what a
+								new template editor could look like based on Liquid.
+							</Text>
+
+							<details>
+								<summary>
+									<TextStyle variation="fancy">Check out the demo!</TextStyle>
+								</summary>
+
+								<video
+									className="p-4 border border-gray-200 rounded shadow"
+									controls
+									poster={LiquidEditorFirstFrame}
+									src={LiquidEditor}
+								/>
+							</details>
+						</article>
+					</li>
+
+					<li>
+						<article className="prose prose-slate">
+							<Heading element="h3">
+								<TextStyle variation="fancy">Embeddable equipment list</TextStyle> @ Cheqroom
+							</Heading>
+
+							<Text>
+								At Cheqroom, customers can expose their inventory by creating a public equipment list.
+								This list can either be embedded in their own application or live as a standalone
+								website. Users can configure the logo, accent colors, available filters, opening hours,
+								...
+							</Text>
+
+							<details>
+								<summary>
+									<TextStyle variation="fancy">Check out the demo!</TextStyle>
+								</summary>
+
+								<video
+									className="p-4 border border-gray-200 rounded shadow"
+									controls
+									poster={EquipmentListFirstFrame}
+									src={EquipmentList}
+								/>
+							</details>
+						</article>
+					</li>
+				</ul>
 			</section>
 
 			<section id="contact">
