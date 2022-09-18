@@ -6,5 +6,6 @@ node_modules
 .env
 .vercel
 .output
+api
 
 /app/styles/app.css
