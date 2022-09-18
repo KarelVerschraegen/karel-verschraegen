@@ -6,7 +6,14 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	to: string;
 }
 
-export const Link: FC<Props> = ({ className, children, element: Element = "a", external = false, to, ...rest }) => {
+export const Link: FC<Props> = ({
+	children,
+	className = "",
+	element: Element = "a",
+	external = false,
+	to,
+	...rest
+}) => {
 	const externalProps = external ? { target: "_blank noreferrer noopener" } : {};
 
 	return (
