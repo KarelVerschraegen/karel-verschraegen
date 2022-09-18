@@ -35,8 +35,8 @@ export const links: LinksFunction = () => [
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<div className="flex flex-col items-center sm:px-8 bg-slate-100">
-			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl md:px-16 xl:px-24">
+		<div className="flex flex-col items-center sm:px-8 dark:bg-black bg-slate-100">
+			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl dark:ring-1 dark:ring-zinc-300/20 dark:bg-zinc-900 md:px-16 xl:px-24">
 				<div className="flex flex-col gap-16">
 					<Header />
 
@@ -51,7 +51,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 
 const Document: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<html lang="en" className="h-full antialiased scroll-smooth font-montserrat text-slate-700">
+		<html lang="en" className="h-full antialiased scroll-smooth font-montserrat dark:text-slate-300 text-slate-700">
 			<head>
 				<Meta />
 				<Links />

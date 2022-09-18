@@ -20,5 +20,5 @@ const SIZES: Record<Size, IconSize> = {
 };
 
 export const Icon: FC<Props> = ({ className = "", source: Source, size = "medium" }) => (
-	<Source className={`text-slate-700 ${className}`} {...SIZES[size]} />
+	<Source className={`text-slate-700 dark:text-slate-300 ${className}`} {...SIZES[size]} />
 );

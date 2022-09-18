@@ -30,7 +30,7 @@ const Index: FC = () => {
 					</Grid.Item>
 
 					<Grid.Item className="col-span-2">
-						<article className="prose prose-slate">
+						<article className="prose prose-slate dark:prose-invert">
 							<Heading element="h1">
 								I'm <TextStyle variation="fancy">Karel Verschraegen</TextStyle>, a TypeScript developer
 								passionate about all things digitally!
@@ -69,7 +69,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">July 2022 - present</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate">
+							<article className="prose prose-slate dark:prose-invert">
 								<Heading element="h3">
 									<TextStyle variation="fancy">Tech Lead</TextStyle>{" "}
 									<span className="not-prose">
@@ -105,7 +105,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">July 2019 - July 2022</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate">
+							<article className="prose prose-slate dark:prose-invert">
 								<Heading element="h3">
 									<TextStyle variation="fancy">Full stack TypeScript developer</TextStyle>{" "}
 									<span className="not-prose">
@@ -142,7 +142,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">February 2019 - May 2019</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate">
+							<article className="prose prose-slate dark:prose-invert">
 								<Heading element="h3">
 									<TextStyle variation="fancy">Intern TypeScript developer</TextStyle>{" "}
 									<span className="not-prose">
@@ -176,7 +176,7 @@ const Index: FC = () => {
 
 				<ul className="flex flex-col gap-16">
 					<li>
-						<article className="prose prose-slate">
+						<article className="prose prose-slate dark:prose-invert">
 							<Heading element="h3">
 								<TextStyle variation="fancy">This website</TextStyle>
 							</Heading>
@@ -199,7 +199,7 @@ const Index: FC = () => {
 					</li>
 
 					<li>
-						<article className="prose prose-slate">
+						<article className="prose prose-slate dark:prose-invert">
 							<Heading element="h3">
 								<TextStyle variation="fancy">Wisserke</TextStyle>
 							</Heading>
@@ -243,7 +243,7 @@ const Index: FC = () => {
 					</li>
 
 					<li>
-						<article className="prose prose-slate">
+						<article className="prose prose-slate dark:prose-invert">
 							<Heading element="h3">
 								<TextStyle variation="fancy">Liquid template editor</TextStyle> @ Cheqroom
 							</Heading>
@@ -272,7 +272,7 @@ const Index: FC = () => {
 					</li>
 
 					<li>
-						<article className="prose prose-slate">
+						<article className="prose prose-slate dark:prose-invert">
 							<Heading element="h3">
 								<TextStyle variation="fancy">Embeddable equipment list</TextStyle> @ Cheqroom
 							</Heading>
@@ -302,7 +302,7 @@ const Index: FC = () => {
 			</section>
 
 			<section id="contact">
-				<article className="prose prose-slate">
+				<article className="prose prose-slate dark:prose-invert">
 					<Heading element="h2">Interested in working with me?</Heading>
 
 					<Text>
