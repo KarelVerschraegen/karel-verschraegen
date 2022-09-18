@@ -10,7 +10,7 @@ interface ErrorProps {
 export const Error: FC<ErrorProps> = ({ error }) => {
 	return (
 		<Grid className="grid-cols-2 gap-8">
-			<article className="prose">
+			<article className="prose prose-slate">
 				<Heading element="h1">
 					<TextStyle variation="fancy">Whoopsie</TextStyle>, it looks like Karel made a mistake!
 				</Heading>
