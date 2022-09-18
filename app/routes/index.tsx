@@ -63,105 +63,109 @@ const Index: FC = () => {
 					My professional trajectory so far!
 				</Heading>
 
-				<Grid className="grid-cols-1 gap-2 lg:gap-16 md:grid-cols-4">
-					<Grid.Item>
+				<div className="flex flex-col gap-16">
+					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
 						<TextStyle variation="subdued">July 2022 - present</TextStyle>
-					</Grid.Item>
 
-					<Grid.Item className="md:col-span-3">
-						<article className="prose prose-slate">
-							<Heading element="h3">
-								<TextStyle variation="fancy">Tech Lead</TextStyle>{" "}
-								<span className="not-prose">
-									<Link to="https://cheqroom.com" external>
-										@ Cheqroom
-									</Link>
-								</span>
-							</Heading>
+						<Grid.Item className="lg:col-span-3">
+							<article className="prose prose-slate">
+								<Heading element="h3">
+									<TextStyle variation="fancy">Tech Lead</TextStyle>{" "}
+									<span className="not-prose">
+										<Link to="https://cheqroom.com" external>
+											@ Cheqroom
+										</Link>
+									</span>
+								</Heading>
 
-							<Text>
-								After having worked as a full stack TypeScript developer for 3 years, I was promoted to
-								tech lead of a team of 4 people. My focus has since shifted from myself to helping out
-								and unblocking my colleagues. Besides helping out, I also:
-							</Text>
+								<Text>
+									After having worked as a full stack TypeScript developer for 3 years, I was promoted
+									to tech lead of a team of 4 people. My focus has since shifted from myself to
+									helping out and unblocking my colleagues. Besides helping out, I also:
+								</Text>
 
-							<ul>
-								<li>
-									Manage and host scrum ceremonies such as daily stand-ups, sprint reviews, team
-									retrospectives, ...
-								</li>
-								<li>Communicate and coordinate feature releases, bug fixes and production deploys</li>
-								<li>Unblock team members, provide feedback and technical insights</li>
-								<li>Tackle technical debt, large refactors and cleaning up legacy code</li>
-								<li>And so much more ...</li>
-							</ul>
-						</article>
-					</Grid.Item>
+								<ul>
+									<li>
+										Manage and host scrum ceremonies such as daily stand-ups, sprint reviews, team
+										retrospectives, ...
+									</li>
+									<li>
+										Communicate and coordinate feature releases, bug fixes and production deploys
+									</li>
+									<li>Unblock team members, provide feedback and technical insights</li>
+									<li>Tackle technical debt, large refactors and cleaning up legacy code</li>
+									<li>And so much more ...</li>
+								</ul>
+							</article>
+						</Grid.Item>
+					</Grid>
 
-					<Grid.Item>
+					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
 						<TextStyle variation="subdued">July 2019 - July 2022</TextStyle>
-					</Grid.Item>
 
-					<Grid.Item className="md:col-span-3">
-						<article className="prose prose-slate">
-							<Heading element="h3">
-								<TextStyle variation="fancy">Full stack TypeScript developer</TextStyle>{" "}
-								<span className="not-prose">
-									<Link to="https://cheqroom.com" external>
-										@ Cheqroom
-									</Link>
-								</span>
-							</Heading>
+						<Grid.Item className="lg:col-span-3">
+							<article className="prose prose-slate">
+								<Heading element="h3">
+									<TextStyle variation="fancy">Full stack TypeScript developer</TextStyle>{" "}
+									<span className="not-prose">
+										<Link to="https://cheqroom.com" external>
+											@ Cheqroom
+										</Link>
+									</span>
+								</Heading>
 
-							<Text>
-								After graduating Cum Laude in 2019, I joined Cheqroom as a full stack TypeScript
-								developer with a focus on React, TypeScript and TailwindCSS. Ever since, I have grown as
-								an engineer with skills ranging from React to NestJS, GraphQL, MongoDB, CQRS and so much
-								more. I have:
-							</Text>
+								<Text>
+									After graduating Cum Laude in 2019, I joined Cheqroom as a full stack TypeScript
+									developer with a focus on React, TypeScript and TailwindCSS. Ever since, I have
+									grown as an engineer with skills ranging from React to NestJS, GraphQL, MongoDB,
+									CQRS and so much more. I have:
+								</Text>
 
-							<ul>
-								<li>Set up communication layer between our legacy Knockout and new React codebase</li>
-								<li>Build out the design system and accompanying component library</li>
-								<li>Set up and deploy GraphQL microservices on AWS</li>
-								<li>
-									Cleaned up <i>so much</i> legacy code
-								</li>
-								<li>Automated the monorepo build/deployment process via GitHub Actions</li>
-								<li>And so much more ...</li>
-							</ul>
-						</article>
-					</Grid.Item>
+								<ul>
+									<li>
+										Set up communication layer between our legacy Knockout and new React codebase
+									</li>
+									<li>Build out the design system and accompanying component library</li>
+									<li>Set up and deploy GraphQL microservices on AWS</li>
+									<li>
+										Cleaned up <i>so much</i> legacy code
+									</li>
+									<li>Automated the monorepo build/deployment process via GitHub Actions</li>
+									<li>And so much more ...</li>
+								</ul>
+							</article>
+						</Grid.Item>
+					</Grid>
 
-					<Grid.Item>
+					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
 						<TextStyle variation="subdued">February 2019 - May 2019</TextStyle>
-					</Grid.Item>
 
-					<Grid.Item className="md:col-span-3">
-						<article className="prose prose-slate">
-							<Heading element="h3">
-								<TextStyle variation="fancy">Intern TypeScript developer</TextStyle>{" "}
-								<span className="not-prose">
-									<Link to="https://getrialto.com" external>
-										@ Rialto
-									</Link>
-								</span>
-							</Heading>
+						<Grid.Item className="lg:col-span-3">
+							<article className="prose prose-slate">
+								<Heading element="h3">
+									<TextStyle variation="fancy">Intern TypeScript developer</TextStyle>{" "}
+									<span className="not-prose">
+										<Link to="https://getrialto.com" external>
+											@ Rialto
+										</Link>
+									</span>
+								</Heading>
 
-							<Text>
-								During my internship, I created a drawing tool that allowed office managers to draw
-								office spaces on floorplans and show the availability of each office space in their
-								portfolio.
-							</Text>
+								<Text>
+									During my internship, I created a drawing tool that allowed office managers to draw
+									office spaces on floorplans and show the availability of each office space in their
+									portfolio.
+								</Text>
 
-							<Text>
-								After teaching myself React, Redux and TypeScript, I built an SVG drawing library to
-								help with drawing on floorplans. Besides my project, I also helped out with regular
-								sprint work and bug fixing.
-							</Text>
-						</article>
-					</Grid.Item>
-				</Grid>
+								<Text>
+									After teaching myself React, Redux and TypeScript, I built an SVG drawing library to
+									help with drawing on floorplans. Besides my project, I also helped out with regular
+									sprint work and bug fixing.
+								</Text>
+							</article>
+						</Grid.Item>
+					</Grid>
+				</div>
 			</section>
 
 			<section id="contact">
