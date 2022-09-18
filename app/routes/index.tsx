@@ -3,7 +3,7 @@ import type { FC } from "react";
 import { Karel, KarelFunny, Wisserke } from "~/assets/images";
 import { EquipmentList, EquipmentListFirstFrame, LiquidEditor, LiquidEditorFirstFrame } from "~/assets/videos";
 import { SOCIALS } from "~/constants/socials";
-import { Grid, Heading, Icon, Image, Link, Text, TextStyle } from "~/ui";
+import { Grid, Heading, Icon, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
 
 const Index: FC = () => {
 	return (
@@ -30,7 +30,7 @@ const Index: FC = () => {
 					</Grid.Item>
 
 					<Grid.Item className="col-span-2">
-						<article className="prose prose-slate dark:prose-invert">
+						<TextContainer>
 							<Heading element="h1">
 								I'm <TextStyle variation="fancy">Karel Verschraegen</TextStyle>, a TypeScript developer
 								passionate about all things digitally!
@@ -54,7 +54,7 @@ const Index: FC = () => {
 								gems each city has to offer, which I use as a guilt-free excuse to try every new
 								restaraunt or bar.
 							</Text>
-						</article>
+						</TextContainer>
 					</Grid.Item>
 				</Grid>
 			</header>
@@ -69,7 +69,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">July 2022 - present</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate dark:prose-invert">
+							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Tech Lead</TextStyle>{" "}
 									<span className="not-prose">
@@ -97,7 +97,7 @@ const Index: FC = () => {
 									<li>Tackle technical debt, large refactors and cleaning up legacy code</li>
 									<li>And so much more ...</li>
 								</ul>
-							</article>
+							</TextContainer>
 						</Grid.Item>
 					</Grid>
 
@@ -105,7 +105,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">July 2019 - July 2022</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate dark:prose-invert">
+							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Full stack TypeScript developer</TextStyle>{" "}
 									<span className="not-prose">
@@ -134,7 +134,7 @@ const Index: FC = () => {
 									<li>Automated the monorepo build/deployment process via GitHub Actions</li>
 									<li>And so much more ...</li>
 								</ul>
-							</article>
+							</TextContainer>
 						</Grid.Item>
 					</Grid>
 
@@ -142,7 +142,7 @@ const Index: FC = () => {
 						<TextStyle variation="subdued">February 2019 - May 2019</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
-							<article className="prose prose-slate dark:prose-invert">
+							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Intern TypeScript developer</TextStyle>{" "}
 									<span className="not-prose">
@@ -163,7 +163,7 @@ const Index: FC = () => {
 									help with drawing on floorplans. Besides my project, I also helped out with regular
 									sprint work and bug fixing.
 								</Text>
-							</article>
+							</TextContainer>
 						</Grid.Item>
 					</Grid>
 				</div>
@@ -176,7 +176,7 @@ const Index: FC = () => {
 
 				<ul className="flex flex-col gap-16">
 					<li>
-						<article className="prose prose-slate dark:prose-invert">
+						<TextContainer>
 							<Heading element="h3">
 								<TextStyle variation="fancy">This website</TextStyle>
 							</Heading>
@@ -195,11 +195,11 @@ const Index: FC = () => {
 									<TextStyle variation="fancy">GitHub.</TextStyle>
 								</Link>
 							</Text>
-						</article>
+						</TextContainer>
 					</li>
 
 					<li>
-						<article className="prose prose-slate dark:prose-invert">
+						<TextContainer>
 							<Heading element="h3">
 								<TextStyle variation="fancy">Wisserke</TextStyle>
 							</Heading>
@@ -239,11 +239,11 @@ const Index: FC = () => {
 									width={500}
 								/>
 							</details>
-						</article>
+						</TextContainer>
 					</li>
 
 					<li>
-						<article className="prose prose-slate dark:prose-invert">
+						<TextContainer>
 							<Heading element="h3">
 								<TextStyle variation="fancy">Liquid template editor</TextStyle> @ Cheqroom
 							</Heading>
@@ -268,11 +268,11 @@ const Index: FC = () => {
 									src={LiquidEditor}
 								/>
 							</details>
-						</article>
+						</TextContainer>
 					</li>
 
 					<li>
-						<article className="prose prose-slate dark:prose-invert">
+						<TextContainer>
 							<Heading element="h3">
 								<TextStyle variation="fancy">Embeddable equipment list</TextStyle> @ Cheqroom
 							</Heading>
@@ -296,13 +296,13 @@ const Index: FC = () => {
 									src={EquipmentList}
 								/>
 							</details>
-						</article>
+						</TextContainer>
 					</li>
 				</ul>
 			</section>
 
 			<section id="contact">
-				<article className="prose prose-slate dark:prose-invert">
+				<TextContainer>
 					<Heading element="h2">Interested in working with me?</Heading>
 
 					<Text>
@@ -324,7 +324,7 @@ const Index: FC = () => {
 							))}
 						</ul>
 					</div>
-				</article>
+				</TextContainer>
 			</section>
 		</div>
 	);
