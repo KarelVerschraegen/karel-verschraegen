@@ -1,5 +1,6 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import type { FC, PropsWithChildren } from "react";
 
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
@@ -31,25 +32,31 @@ export const links: LinksFunction = () => [
 	},
 ];
 
-export default function App() {
+const Layout: FC<PropsWithChildren> = ({ children }) => {
+	return (
+		<div className="flex flex-col items-center sm:px-8 bg-slate-100">
+			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl md:px-16 xl:px-24">
+				<div className="flex flex-col gap-16">
+					<Header />
+
+					<main>{children}</main>
+
+					<Footer />
+				</div>
+			</div>
+		</div>
+	);
+};
+
+const Document: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<html lang="en" className="h-full antialiased scroll-smooth font-montserrat text-slate-700">
 			<head>
 				<Meta />
 				<Links />
 			</head>
-			<body className="flex flex-col items-center h-full sm:px-8 bg-slate-100">
-				<div className="w-full max-w-screen-xl p-8 bg-white shadow-xl md:px-16 xl:px-24">
-					<div className="flex flex-col gap-16">
-						<Header />
-
-						<main>
-							<Outlet />
-						</main>
-
-						<Footer />
-					</div>
-				</div>
+			<body>
+				{children}
 
 				<ScrollRestoration />
 				<Scripts />
@@ -57,4 +64,16 @@ export default function App() {
 			</body>
 		</html>
 	);
-}
+};
+
+const App: FC = () => {
+	return (
+		<Document>
+			<Layout>
+				<Outlet />
+			</Layout>
+		</Document>
+	);
+};
+
+export default App;
