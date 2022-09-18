@@ -12,7 +12,7 @@ const ROUTES = [
 
 export const Header = () => {
 	return (
-		<header className="flex items-center justify-end pb-4 border-b md:justify-between border-slate-200">
+		<header className="flex items-center justify-end pb-4 border-b md:justify-between border-slate-200 dark:border-slate-700">
 			<Link to="/" className="items-center hidden gap-4 pointer-events-auto md:flex" aria-label="Home">
 				<Avatar src={Karel} alt="Karel Verschraegen" />
 
