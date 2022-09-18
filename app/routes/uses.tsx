@@ -4,7 +4,7 @@ const Uses = () => {
 	return (
 		<div className="flex flex-col gap-16">
 			<header>
-				<div className="prose prose-slate">
+				<div className="prose prose-slate dark:prose-invert">
 					<Heading element="h1">Interesting in knowing what tools I use to make software?</Heading>
 
 					<Text>
@@ -24,7 +24,7 @@ const Uses = () => {
 						<Grid.Item className="md:col-span-3">
 							<ul className="flex flex-col gap-16">
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">Custom-built Arch Linux</Heading>
 
 										<Text>
@@ -46,7 +46,7 @@ const Uses = () => {
 								</li>
 
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">15" MacBook Pro, 6-core i7, 16GB RAM (2019)</Heading>
 
 										<Text>My laptop when I am not working from home</Text>
@@ -64,7 +64,7 @@ const Uses = () => {
 						<Grid.Item className="md:col-span-3">
 							<ul className="flex flex-col gap-16">
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">Vortex RACE 3 RGB (ANSI) Keyboard</Heading>
 
 										<Text>
@@ -75,7 +75,7 @@ const Uses = () => {
 								</li>
 
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">Herman Miller Mirra 2 Chair</Heading>
 
 										<Text>
@@ -86,7 +86,7 @@ const Uses = () => {
 								</li>
 
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">Edifier R1280T Speakers</Heading>
 
 										<Text>Some proper speakers</Text>
@@ -104,7 +104,7 @@ const Uses = () => {
 						<Grid.Item className="md:col-span-3">
 							<ul>
 								<li>
-									<div className="prose prose-slate">
+									<div className="prose prose-slate dark:prose-invert">
 										<Heading element="h3">VSCode</Heading>
 
 										<Text>

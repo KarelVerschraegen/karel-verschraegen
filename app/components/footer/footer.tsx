@@ -1,10 +1,10 @@
 import { SOCIALS } from "~/constants/socials";
-import { Icon, Link,Text, TextStyle } from "~/ui";
+import { Icon, Link, Text, TextStyle } from "~/ui";
 
 export const Footer = () => {
 	return (
 		<footer className="flex flex-col justify-between gap-4 pt-8 border-t sm:flex-row border-slate-200">
-			<Text className="prose prose-slate">
+			<Text>
 				Made with{" "}
 				<Link to="https://remix.run" external>
 					<TextStyle variation="fancy">Remix</TextStyle>
