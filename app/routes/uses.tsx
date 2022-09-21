@@ -8,8 +8,8 @@ const Uses = () => {
 					<Heading element="h1">Interesting in knowing what tools I use to make software?</Heading>
 
 					<Text>
-						A list of some of the tools I use on a daily basis to make beautiful applications and blazing
-						fast back-ends!
+						A list of tools I use on a daily basis to make beautiful web applications and blazing fast
+						back-ends!
 					</Text>
 				</TextContainer>
 			</header>
@@ -25,11 +25,12 @@ const Uses = () => {
 							<ul className="flex flex-col gap-16">
 								<li>
 									<TextContainer>
-										<Heading element="h3">Custom-built Arch Linux</Heading>
+										<Heading element="h3">Custom-built Arch Linux computer</Heading>
 
 										<Text>
-											I have always been interested in electronics and building my own computer.
-											In July 2019, I built my own PC with the following specs:
+											I have always been interested in software development, electronics and
+											building my own computer. In July 2019, I built my own PC with the following
+											specs:
 										</Text>
 
 										<ul>
@@ -49,7 +50,11 @@ const Uses = () => {
 									<TextContainer>
 										<Heading element="h3">15" MacBook Pro, 6-core i7, 16GB RAM (2019)</Heading>
 
-										<Text>My laptop when I am not working from home</Text>
+										<Text>
+											Whenever I am not working from the comfort of my own home, this beast of a
+											machine helps me with downloading my{" "}
+											<span className="bg-slate-100 p-1 rounded">node_modules</span>.
+										</Text>
 									</TextContainer>
 								</li>
 							</ul>
@@ -68,8 +73,10 @@ const Uses = () => {
 										<Heading element="h3">Vortex RACE 3 RGB (ANSI) Keyboard</Heading>
 
 										<Text>
-											Can you really call yourself a developer if your keyboard does not make
-											clicky-clacky sounds and does not light up in the dark?
+											Can you really call yourself a developer if your mechanical keyboard does
+											not make clicky-clacky sounds and does not light up in the dark? This
+											keyboard is built like a tank and has served me well for the past 3 years. I
+											personally use Cherry MX brown switches.
 										</Text>
 									</TextContainer>
 								</li>
@@ -80,7 +87,8 @@ const Uses = () => {
 
 										<Text>
 											As someone struggling with subarticular disc bulging on L3 - L5, having a
-											proper desk setup and chair is a must
+											high-quality chair and a height-adjustable desk is a must. It is by far the
+											best investment I have made.
 										</Text>
 									</TextContainer>
 								</li>
@@ -89,7 +97,10 @@ const Uses = () => {
 									<TextContainer>
 										<Heading element="h3">Edifier R1280T Speakers</Heading>
 
-										<Text>Some proper speakers</Text>
+										<Text>
+											Some very high-quality bookshelf speakers to blast techno while I fix bugs
+											that I personally introduced a couple of months ago.
+										</Text>
 									</TextContainer>
 								</li>
 							</ul>
@@ -108,8 +119,9 @@ const Uses = () => {
 										<Heading element="h3">VSCode</Heading>
 
 										<Text>
-											My preferred editor, with Popping and Locking as theme and Material Icon as
-											icon set combined with some extensions to make my development life easier
+											My preferred code editor, customised with with Popping and Locking as my
+											theme and Material Icon as my icon set, combined with some extensions to
+											make my development life easier.
 										</Text>
 									</TextContainer>
 								</li>
