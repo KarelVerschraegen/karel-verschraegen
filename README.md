@@ -1,53 +1,41 @@
-# Welcome to Remix!
+# Welcome!
 
--   [Remix Docs](https://remix.run/docs)
+## Technologies
 
-## Development
+This site is built with
+- [React](https://reactjs.org/)
+- [Remix](https://remix.run/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Pnpm](https://pnpm.io/)
+- [TypeScript](https://typescriptlang.org/)
+
+and hosted on
+- [Vercel](https://vercel.com/)
+
+## Getting started
 
 From your terminal:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+To start the project in development mode.
 
 ## Deployment
 
-First, build your app for production:
+If you want to build and serve the website in production mode locally:
 
 ```sh
-npm run build
+pnpm run build && pnpm run start
 ```
 
-Then run the app in production mode:
+The Vercel integration automatically deploys all code on the `master` branch to the production environment.
+
+If you want to create a preview branch before pushing your code to production, you can create a new branch and Vercel will automatically create a testing environment.
 
 ```sh
-npm start
-```
+git checkout -b my_new_branch
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
--   `build/`
--   `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
+git push
 ```
