@@ -1,10 +1,22 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import { json } from "@remix-run/node";
+import {
+	Links,
+	LiveReload,
+	Meta,
+	Outlet,
+	Scripts,
+	ScrollRestoration,
+	useLoaderData,
+	useLocation,
+} from "@remix-run/react";
 import type { FC, PropsWithChildren } from "react";
+import { useEffect } from "react";
 
 import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
+import { webVitals } from "./lib/vitals";
 import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => {
@@ -66,7 +78,24 @@ const Document: FC<PropsWithChildren> = ({ children }) => {
 	);
 };
 
+export const loader = () => {
+	return json({
+		ENV: {
+			VERCEL_ANALYTICS_ID: process.env.VERCEL_ANALYTICS_ID as string,
+		},
+	});
+};
+
 const App: FC = () => {
+	const data = useLoaderData<typeof loader>();
+	const location = useLocation();
+
+	useEffect(() => {
+		if (data.ENV.VERCEL_ANALYTICS_ID) {
+			webVitals({ path: location.pathname, analyticsId: data.ENV.VERCEL_ANALYTICS_ID });
+		}
+	}, [location]);
+
 	return (
 		<Document>
 			<Layout>
