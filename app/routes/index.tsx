@@ -33,7 +33,7 @@ const Index: FC = () => {
 						<TextContainer>
 							<Heading element="h1">
 								I'm <TextStyle variation="fancy">Karel Verschraegen</TextStyle>, a TypeScript developer
-								passionate about all things digitally!
+								passionate about all things digital!
 							</Heading>
 
 							<Text>
