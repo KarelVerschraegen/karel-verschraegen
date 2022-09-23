@@ -8,7 +8,7 @@ import { Header } from "./components/header/header";
 import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => {
-	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digitally!";
+	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digital!";
 
 	return {
 		charset: "utf-8",
