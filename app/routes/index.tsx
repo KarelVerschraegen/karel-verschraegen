@@ -315,7 +315,16 @@ const Index: FC = () => {
 						and pizza!
 					</Text>
 
-					<Text>You can find me on all platforms!</Text>
+					<Text>
+						You can find me on all platforms or check out{" "}
+						<Link
+							external
+							to="https://raw.githubusercontent.com/KarelVerschraegen/karel-verschraegen/master/app/assets/pdfs/resume-karel-verschraegen.pdf"
+						>
+							<TextStyle variation="fancy">my resume</TextStyle>
+						</Link>
+						!
+					</Text>
 
 					<div className="not-prose">
 						<ul className="flex flex-row gap-4 lg:gap-8">
