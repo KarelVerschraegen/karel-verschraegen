@@ -52,7 +52,7 @@ const Index: FC = () => {
 								Whenever I am not behind my computer, you'll find me in a swimming pool, skiing on the
 								slopes, or quoting The Office! Besides that, I love traveling and exploring the hidden
 								gems each city has to offer, which I use as a guilt-free excuse to try every new
-								restaraunt or bar.
+								restaurant or bar.
 							</Text>
 						</TextContainer>
 					</Grid.Item>
