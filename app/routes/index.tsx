@@ -82,12 +82,12 @@ const Index: FC = () => {
 								<Text>
 									After having worked as a full stack TypeScript developer for 3 years, I was promoted
 									to tech lead of a team of 4 people. My focus has since shifted from myself to
-									helping out and unblocking my colleagues. Besides helping out, I also:
+									helping out and unblocking my colleagues. I also:
 								</Text>
 
 								<ul>
 									<li>
-										Manage and host scrum ceremonies such as daily stand-ups, sprint reviews, team
+										Manage and host scrum meetings such as daily stand-ups, sprint reviews, team
 										retrospectives, ...
 									</li>
 									<li>
@@ -124,7 +124,7 @@ const Index: FC = () => {
 
 								<ul>
 									<li>
-										Set up communication layer between our legacy Knockout and new React codebase
+										Set up a communication layer between our legacy Knockout and new React codebase
 									</li>
 									<li>Build out the design system and accompanying component library</li>
 									<li>Set up and deploy GraphQL microservices on AWS</li>
@@ -182,9 +182,9 @@ const Index: FC = () => {
 							</Heading>
 
 							<Text>
-								I have always wanted play with Remix and this seemed like the perfect excuse to give it
-								a shot. Making this website has definitely pushed me out of my comfort zone. On a daily
-								basis, designers create beautiful interfaces for me to build, but now it became my
+								I have always wanted to play with Remix and this seemed like the perfect excuse to give
+								it a shot. Making this website has definitely pushed me out of my comfort zone. On a
+								daily basis, designers create beautiful interfaces for me to build, but now it became my
 								responsibility! I am really happy with the end result and will use this as a playground
 								to try out new technologies.
 							</Text>
