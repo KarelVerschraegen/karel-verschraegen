@@ -66,7 +66,31 @@ const Index: FC = () => {
 
 				<div className="flex flex-col gap-16">
 					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
-						<TextStyle variation="subdued">July 2022 - present</TextStyle>
+						<TextStyle variation="subdued">February 2023 - present</TextStyle>
+
+						<Grid.Item className="lg:col-span-3">
+							<TextContainer>
+								<Heading element="h3">
+									<TextStyle variation="fancy">Software Engineer</TextStyle>{" "}
+									<span className="not-prose">
+										<Link to="https://www.aikido.dev/" external>
+											@ Aikido
+										</Link>
+									</span>
+								</Heading>
+
+								<Text>
+									After 4 years at Cheqroom, the time has come for new a new adventure! Aikido
+									Security is on a mission to make building secure software easy for developers, so
+									that no software company ever gets hacked. In short: we’re building accessible and
+									affordable security software. Built for devs, not security experts.
+								</Text>
+							</TextContainer>
+						</Grid.Item>
+					</Grid>
+
+					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
+						<TextStyle variation="subdued">July 2022 - February 2023</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
 							<TextContainer>
