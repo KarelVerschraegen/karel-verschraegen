@@ -37,15 +37,13 @@ const Index: FC = () => {
 							</Heading>
 
 							<Text>
-								I have spent the last 3.5+ years focused on all aspects of software development, ranging
-								from building beautiful applications in React to setting up GraphQL resolvers and
-								MongoDB databases.
+								I have spent the last 4+ years focused on all aspects of software development, ranging
+								from crafting beautiful applications in React and Vue to building GraphQL and PHP.
 							</Text>
 
 							<Text>
-								These days, I help solve equipment management problems for some of the biggest companies
-								in the audio-visual industry where I primarily focus on front-end development in React
-								and back-end development in NestJS with GraphQL.
+								These days, I help software developers ship secure code by building a platform that
+								aggregates, filters and displays the most commonly found security pitfalls.
 							</Text>
 
 							<Text>
@@ -82,7 +80,7 @@ const Index: FC = () => {
 								<Text>
 									After 4 years at Cheqroom, the time has come for new a new adventure! Aikido
 									Security is on a mission to make building secure software easy for developers, so
-									that no software company ever gets hacked. In short: we’re building accessible and
+									that no software company ever gets hacked. In short: we're building accessible and
 									affordable security software. Built for devs, not security experts.
 								</Text>
 							</TextContainer>
