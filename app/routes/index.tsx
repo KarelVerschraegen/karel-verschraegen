@@ -273,9 +273,8 @@ const Index: FC = () => {
 							<Text>
 								From ideation, to designing and prototyping in just two days! During a hackathon at
 								Cheqroom, a colleague and I created a prototype for a PDF template editor based on
-								Shopify's Liquid templating language. At Cheqroom, users can create and manage custom
-								PDF templates but this is a very cumbersome process. This prototype demonstrates what a
-								new template editor could look like based on Liquid.
+								Shopify's Liquid templating language. This prototype demonstrates what a new template
+								editor for Cheqroom could look like.
 							</Text>
 
 							<details>
