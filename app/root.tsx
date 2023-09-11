@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
 	Links,
@@ -19,21 +19,21 @@ import { Header } from "./components/header/header";
 import { webVitals } from "./lib/vitals";
 import styles from "./styles/app.css";
 
-export const meta: MetaFunction = () => {
+export const meta = () => {
 	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digital!";
 
-	return {
-		charset: "utf-8",
-		title: "Karel Verschraegen",
-		viewport: "width=device-width,initial-scale=1",
-		keywords: "Karel Verschraegen,resume,cv,software developer",
-		description,
-		"twitter:card": "summary",
-		"twitter:creator": "@karelverschrae",
-		"twitter:site": "@karelverschrae",
-		"twitter:title": "Karel Verschraegen",
-		"twitter:description": description,
-	};
+	return [
+		{ charset: "utf-8" },
+		{ title: "Karel Verschraegen" },
+		{ viewport: "width=device-width,initial-scale=1" },
+		{ keywords: "Karel Verschraegen,resume,cv,software developer" },
+		{ description },
+		{ "twitter:card": "summary" },
+		{ "twitter:creator": "@karelverschrae" },
+		{ "twitter:site": "@karelverschrae" },
+		{ "twitter:title": "Karel Verschraegen" },
+		{ "twitter:description": description },
+	];
 };
 
 export const links: LinksFunction = () => [
