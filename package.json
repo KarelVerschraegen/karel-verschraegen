@@ -6,7 +6,8 @@
 		"build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
 		"dev": "concurrently \"npm run dev:css\" \"remix dev\"",
 		"dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
-		"lint": "eslint . --ext .ts,.tsx --fix"
+		"lint": "eslint . --ext .ts,.tsx --fix",
+		"fmt": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --write"
 	},
 	"dependencies": {
 		"@remix-run/node": "^1.19.3",
@@ -22,15 +23,16 @@
 		"@remix-run/dev": "^1.19.3",
 		"@remix-run/eslint-config": "^1.19.3",
 		"@tailwindcss/typography": "^0.5.10",
+		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
 		"@types/react": "^18.2.21",
 		"@types/react-dom": "^18.2.7",
 		"autoprefixer": "^10.4.15",
 		"concurrently": "^8.2.1",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"postcss": "^8.4.29",
 		"prettier": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.4",
 		"tailwindcss": "^3.3.3",
 		"typescript": "^5.2.2",
 		"web-vitals": "^3.4.0"
