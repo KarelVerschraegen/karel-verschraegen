@@ -11,6 +11,7 @@ import {
 	useLocation,
 	useRouteError,
 } from "@remix-run/react";
+import { Analytics } from "@vercel/analytics/react";
 import type { FC, PropsWithChildren } from "react";
 import { useEffect } from "react";
 
@@ -74,6 +75,7 @@ const Document: FC<PropsWithChildren> = ({ children }) => {
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />
+				<Analytics />
 			</body>
 		</html>
 	);
