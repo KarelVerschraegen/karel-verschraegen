@@ -17,7 +17,7 @@ const Uses = () => {
 			<section id="uses">
 				<div className="flex flex-col gap-16">
 					<Grid className="grid-cols-1 gap-4 md:grid-cols-4">
-						<Heading element="h2" className="!text-lg">
+						<Heading element="h2" className="text-lg">
 							<TextStyle variation="fancy">Workstation</TextStyle>
 						</Heading>
 
@@ -53,7 +53,7 @@ const Uses = () => {
 										<Text>
 											Whenever I am not working from the comfort of my own home, this beast of a
 											machine helps me with downloading my{" "}
-											<span className="bg-slate-100 p-1 rounded">node_modules</span>.
+											<span className="p-1 rounded bg-slate-100">node_modules</span>.
 										</Text>
 									</TextContainer>
 								</li>
@@ -62,7 +62,7 @@ const Uses = () => {
 					</Grid>
 
 					<Grid className="grid-cols-1 gap-4 md:grid-cols-4">
-						<Heading element="h2" className="!text-lg">
+						<Heading element="h2" className="text-lg">
 							<TextStyle variation="fancy">Peripherals</TextStyle>
 						</Heading>
 
@@ -108,7 +108,7 @@ const Uses = () => {
 					</Grid>
 
 					<Grid className="grid-cols-1 gap-4 md:grid-cols-4">
-						<Heading element="h2" className="!text-lg">
+						<Heading element="h2" className="text-lg">
 							<TextStyle variation="fancy">Development Tools</TextStyle>
 						</Heading>
 

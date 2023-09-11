@@ -16,7 +16,7 @@ export const Header = () => {
 			<Link to="/" className="items-center hidden gap-4 pointer-events-auto md:flex" aria-label="Home">
 				<Avatar src={Karel} alt="Karel Verschraegen" />
 
-				<Heading element="h1" className="!text-2xl">
+				<Heading element="h1" className="text-2xl">
 					<TextStyle variation="fancy">Karel Verschraegen</TextStyle>
 				</Heading>
 			</Link>
