@@ -86,6 +86,11 @@ const Index: FC = () => {
 									software company ever gets hacked. In short: we're building accessible and
 									affordable security software. Built for devs, not security experts.
 								</Text>
+
+								<ul>
+									<li>Help discover product-market-fit with newly built features</li>
+									<li>Improve onboarding experience, open-source license scanning, ...</li>
+								</ul>
 							</TextContainer>
 						</Grid.Item>
 					</Grid>
