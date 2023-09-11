@@ -38,12 +38,8 @@ const Index: FC = () => {
 
 							<Text>
 								I have spent the last 4+ years focused on all aspects of software development, ranging
-								from crafting beautiful applications in React and Vue to building GraphQL and PHP.
-							</Text>
-
-							<Text>
-								These days, I help software developers ship secure code by building a platform that
-								aggregates, filters and displays the most commonly found security pitfalls.
+								from creating beautiful applications in React and Vue to building backends in NestJS and
+								PHP.
 							</Text>
 
 							<Text>
@@ -51,6 +47,13 @@ const Index: FC = () => {
 								slopes, or quoting The Office! Besides that, I love traveling and exploring the hidden
 								gems each city has to offer, which I use as a guilt-free excuse to try every new
 								restaurant or bar.
+							</Text>
+
+							<Text>
+								Interesting in working together?{" "}
+								<Link to="#contact">
+									<TextStyle variation="fancy">Let's have a chat!</TextStyle>
+								</Link>
 							</Text>
 						</TextContainer>
 					</Grid.Item>
@@ -117,7 +120,7 @@ const Index: FC = () => {
 									</li>
 									<li>Unblock team members, provide feedback and technical insights</li>
 									<li>Tackle technical debt, large refactors and cleaning up legacy code</li>
-									<li>And so much more ...</li>
+									<li>And so much more</li>
 								</ul>
 							</TextContainer>
 						</Grid.Item>
@@ -141,20 +144,18 @@ const Index: FC = () => {
 									After graduating Cum Laude in 2019, I joined Cheqroom as a full stack TypeScript
 									developer with a focus on React, TypeScript and TailwindCSS. Ever since, I have
 									grown as an engineer with skills ranging from React to NestJS, GraphQL, MongoDB,
-									CQRS and so much more. I have:
+									CQRS, ... I have:
 								</Text>
 
 								<ul>
-									<li>
-										Set up a communication layer between our legacy Knockout and new React codebase
-									</li>
+									<li>Set up a communication layer between the Knockout and React codebase</li>
 									<li>Build out the design system and accompanying component library</li>
 									<li>Set up and deploy GraphQL microservices on AWS</li>
 									<li>
 										Cleaned up <i>so much</i> legacy code
 									</li>
 									<li>Automated the monorepo build/deployment process via GitHub Actions</li>
-									<li>And so much more ...</li>
+									<li>And so much more</li>
 								</ul>
 							</TextContainer>
 						</Grid.Item>
@@ -205,10 +206,9 @@ const Index: FC = () => {
 
 							<Text>
 								I have always wanted to play with Remix and this seemed like the perfect excuse to give
-								it a shot. Making this website has definitely pushed me out of my comfort zone. On a
-								daily basis, designers create beautiful interfaces for me to build, but now it became my
-								responsibility! I am really happy with the end result and will use this as a playground
-								to try out new technologies.
+								it a shot. Making this website has definitely pushed me out of my comfort zone as
+								designing websites is not my forte. I am really happy with the end result and will use
+								this as a playground to try out new technologies.
 							</Text>
 
 							<Text>
@@ -229,9 +229,8 @@ const Index: FC = () => {
 							<Text>
 								Wisserke is a <i>very small</i> GitHub bot that I wrote to keep my colleagues
 								entertained. The name 'Wisserke' is a reference to a Belgian TV show called 'Het
-								Eiland', where a developer tries to delete data from someone's personal computer.
-								Whenever you create a pull request, Wisserke will inspect your deletions and if they
-								exceed a certain threshold, it will post a GIF on your pull request.
+								Eiland'. Whenever you create a pull request with more deletions than additions, Wisserke
+								will post a GIF on your pull request.
 							</Text>
 
 							<Text>
@@ -332,8 +331,7 @@ const Index: FC = () => {
 
 					<Text>
 						Interested in working together? Feel free to reach out and let's have a chat! I am currently
-						based in Belgium, considering moving to Berlin and open to relocate to wherever they serve beer
-						and pizza!
+						based in Belgium and open to relocate to wherever they serve beer and pizza!
 					</Text>
 
 					<Text>
