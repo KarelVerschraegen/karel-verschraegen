@@ -9,6 +9,7 @@ import {
 	ScrollRestoration,
 	useLoaderData,
 	useLocation,
+	useRouteError,
 } from "@remix-run/react";
 import type { FC, PropsWithChildren } from "react";
 import { useEffect } from "react";
@@ -109,7 +110,9 @@ interface ErrorBoundaryProps {
 	error: Error;
 }
 
-export const ErrorBoundary: FC<ErrorBoundaryProps> = ({ error }) => {
+export const ErrorBoundary: FC<ErrorBoundaryProps> = () => {
+	const error = useRouteError();
+
 	return (
 		<Document>
 			<Layout>

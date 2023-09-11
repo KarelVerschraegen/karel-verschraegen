@@ -4,10 +4,12 @@ import { KarelFunny } from "~/assets/images";
 import { Grid, Heading, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
 
 interface ErrorProps {
-	error: Error;
+	error: unknown;
 }
 
 export const Error: FC<ErrorProps> = ({ error }) => {
+	const message = typeof error === "string" ? error : "Unknown error";
+
 	return (
 		<Grid className="grid-cols-2 gap-8">
 			<TextContainer>
@@ -23,7 +25,7 @@ export const Error: FC<ErrorProps> = ({ error }) => {
 					</Link>
 				</Text>
 
-				<TextStyle variation="subdued">{error.message}</TextStyle>
+				<TextStyle variation="subdued">{message}</TextStyle>
 			</TextContainer>
 
 			<Image
