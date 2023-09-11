@@ -53,7 +53,7 @@ const Uses = () => {
 										<Text>
 											Whenever I am not working from the comfort of my own home, this beast of a
 											machine helps me with downloading my{" "}
-											<span className="p-1 rounded bg-slate-100">node_modules</span>.
+											<span className="rounded bg-slate-100 p-1">node_modules</span>.
 										</Text>
 									</TextContainer>
 								</li>

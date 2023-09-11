@@ -3,7 +3,7 @@ import { Icon, Link, Text, TextStyle } from "~/ui";
 
 export const Footer = () => {
 	return (
-		<footer className="flex flex-col justify-between gap-4 pt-8 border-t sm:flex-row border-slate-200 dark:border-slate-700">
+		<footer className="flex flex-col justify-between gap-4 border-t border-slate-200 pt-8 dark:border-slate-700 sm:flex-row">
 			<Text>
 				Made with{" "}
 				<Link to="https://remix.run" external>

@@ -19,7 +19,7 @@ const STYLES: Record<Element, string> = {
 export const Heading: FC<Props> = ({ children, className = "", element: Element, ...rest }) => {
 	return (
 		<Element
-			className={twMerge(`text-slate-900 dark:text-slate-100 font-bold ${STYLES[Element]}`, className)}
+			className={twMerge(`font-bold text-slate-900 dark:text-slate-100 ${STYLES[Element]}`, className)}
 			{...rest}
 		>
 			{children}

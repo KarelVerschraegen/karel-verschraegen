@@ -3,14 +3,16 @@
 ## Technologies
 
 This site is built with
-- [React](https://reactjs.org/)
-- [Remix](https://remix.run/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Pnpm](https://pnpm.io/)
-- [TypeScript](https://typescriptlang.org/)
+
+-   [React](https://reactjs.org/)
+-   [Remix](https://remix.run/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [Pnpm](https://pnpm.io/)
+-   [TypeScript](https://typescriptlang.org/)
 
 and hosted on
-- [Vercel](https://vercel.com/)
+
+-   [Vercel](https://vercel.com/)
 
 ## Getting started
 

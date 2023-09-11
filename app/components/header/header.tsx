@@ -12,8 +12,8 @@ const ROUTES = [
 
 export const Header = () => {
 	return (
-		<header className="flex items-center justify-end pb-4 border-b md:justify-between border-slate-200 dark:border-slate-700">
-			<Link to="/" className="items-center hidden gap-4 pointer-events-auto md:flex" aria-label="Home">
+		<header className="flex items-center justify-end border-b border-slate-200 pb-4 dark:border-slate-700 md:justify-between">
+			<Link to="/" className="pointer-events-auto hidden items-center gap-4 md:flex" aria-label="Home">
 				<Avatar src={Karel} alt="Karel Verschraegen" />
 
 				<Heading element="h1" className="text-2xl">
