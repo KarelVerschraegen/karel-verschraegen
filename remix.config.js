@@ -1,6 +1,11 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-	serverBuildTarget: "vercel",
+	publicPath: "/build/", // default value, can be removed
+	serverBuildPath: "api/index.js",
+	serverMainFields: ["main", "module"], // default value, can be removed
+	serverMinify: false, // default value, can be removed
+	serverModuleFormat: "cjs", // default value, can be removed
+	serverPlatform: "node", // default value, can be removed
 	// When running locally in development mode, we use the built in remix
 	// server. This does not understand the vercel lambda module format,
 	// so we default back to the standard build output.
