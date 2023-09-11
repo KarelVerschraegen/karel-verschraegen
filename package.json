@@ -15,7 +15,8 @@
 		"@remix-run/vercel": "^1.19.3",
 		"@vercel/node": "^2.15.10",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"tailwind-merge": "^1.14.0"
 	},
 	"devDependencies": {
 		"@remix-run/dev": "^1.19.3",
