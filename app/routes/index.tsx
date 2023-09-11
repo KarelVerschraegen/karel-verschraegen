@@ -64,7 +64,7 @@ const Index: FC = () => {
 
 				<div className="flex flex-col gap-16">
 					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
-						<TextStyle variation="subdued">February 2023 - present</TextStyle>
+						<TextStyle variation="subdued">February 2023 - May 2023</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
 							<TextContainer>
