@@ -32,8 +32,8 @@ const Index: FC = () => {
 					<Grid.Item className="col-span-2">
 						<TextContainer>
 							<Heading element="h1">
-								I'm <TextStyle variation="fancy">Karel Verschraegen</TextStyle>, a TypeScript developer
-								passionate about all things digital!
+								I'm <TextStyle variation="fancy">Karel</TextStyle>, a TypeScript dev passionate about
+								all things digital!
 							</Heading>
 
 							<Text>
@@ -43,10 +43,13 @@ const Index: FC = () => {
 							</Text>
 
 							<Text>
-								Whenever I am not behind my computer, you'll find me in a swimming pool, skiing on the
-								slopes, or quoting The Office! Besides that, I love traveling and exploring the hidden
-								gems each city has to offer, which I use as a guilt-free excuse to try every new
-								restaurant or bar.
+								I have proven success in rapid prototyping, product development, leadership, technical
+								problem-solving, coordination and communication.
+							</Text>
+
+							<Text>
+								Whenever I am not behind my computer, you'll find me exploring new countries, skiing on
+								the slopes, or quoting The Office!
 							</Text>
 
 							<Text>
@@ -88,8 +91,11 @@ const Index: FC = () => {
 								</Text>
 
 								<ul>
-									<li>Help discover product-market-fit with newly built features</li>
-									<li>Improve onboarding experience, open-source license scanning, ...</li>
+									<li>
+										Help discover product-market-fit with newly built features by rapidly
+										prototyping and iterating based on collected feedback
+									</li>
+									<li>Improve onboarding experience, open-source license scanning...</li>
 								</ul>
 							</TextContainer>
 						</Grid.Item>
@@ -118,13 +124,13 @@ const Index: FC = () => {
 								<ul>
 									<li>
 										Manage and host scrum meetings such as daily stand-ups, sprint reviews, team
-										retrospectives, ...
+										retrospectives...
 									</li>
 									<li>
 										Communicate and coordinate feature releases, bug fixes and production deploys
 									</li>
 									<li>Unblock team members, provide feedback and technical insights</li>
-									<li>Tackle technical debt, large refactors and cleaning up legacy code</li>
+									<li>Tackle technical debt, large refactors and general maintenance</li>
 									<li>And so much more</li>
 								</ul>
 							</TextContainer>
@@ -149,11 +155,11 @@ const Index: FC = () => {
 									After graduating Cum Laude in 2019, I joined Cheqroom as a full stack TypeScript
 									developer with a focus on React, TypeScript and TailwindCSS. Ever since, I have
 									grown as an engineer with skills ranging from React to NestJS, GraphQL, MongoDB,
-									CQRS, ... I have:
+									CQRS... I have:
 								</Text>
 
 								<ul>
-									<li>Set up a communication layer between the Knockout and React codebase</li>
+									<li>Set up a communication layer between Knockout and React</li>
 									<li>Build out the design system and accompanying component library</li>
 									<li>Set up and deploy GraphQL microservices on AWS</li>
 									<li>
