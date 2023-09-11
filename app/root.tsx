@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
 	Links,
@@ -81,7 +81,7 @@ const Document: FC<PropsWithChildren> = ({ children }) => {
 	);
 };
 
-export const loader = () => {
+export const loader: LoaderFunction = () => {
 	return json({
 		ENV: {
 			VERCEL_ANALYTICS_ID: process.env.VERCEL_ANALYTICS_ID as string,
