@@ -1,4 +1,5 @@
 import type { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 type Variation = "fancy" | "feisty" | "subdued";
 
@@ -14,7 +15,7 @@ const VARIATIONS: Record<Variation, string> = {
 
 export const TextStyle: FC<Props> = ({ className = "", children, variation, ...rest }) => {
 	return (
-		<span className={`${VARIATIONS[variation]} ${className}`} {...rest}>
+		<span className={twMerge(`${VARIATIONS[variation]}`, className)} {...rest}>
 			{children}
 		</span>
 	);

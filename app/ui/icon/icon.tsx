@@ -1,4 +1,5 @@
 import type { FC, SVGAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 type Size = "small" | "medium" | "large";
 type IconSource = FC<any>;
@@ -20,5 +21,5 @@ const SIZES: Record<Size, IconSize> = {
 };
 
 export const Icon: FC<Props> = ({ className = "", source: Source, size = "medium" }) => (
-	<Source className={`text-slate-700 dark:text-slate-300 ${className}`} {...SIZES[size]} />
+	<Source className={twMerge(`text-slate-700 dark:text-slate-300`, className)} {...SIZES[size]} />
 );

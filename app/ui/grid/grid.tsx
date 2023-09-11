@@ -1,4 +1,5 @@
 import type { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
@@ -12,7 +13,7 @@ const Item: FC<Props> = ({ children, ...rest }) => {
 
 export const Grid: FC<Props> & ComponentComposition = ({ children, className = "", ...rest }) => {
 	return (
-		<div className={`grid ${className}`} {...rest}>
+		<div className={twMerge(`grid`, className)} {...rest}>
 			{children}
 		</div>
 	);
