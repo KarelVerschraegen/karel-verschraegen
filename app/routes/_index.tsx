@@ -296,6 +296,7 @@ const Index: FC = () => {
 									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
 									controls
 									poster={LiquidEditorFirstFrame}
+									preload="none"
 								>
 									This browser does not support embedded video players
 									<source src={LiquidEditor} type="video/mp4" />
@@ -326,6 +327,7 @@ const Index: FC = () => {
 									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
 									controls
 									poster={EquipmentListFirstFrame}
+									preload="none"
 								>
 									This browser does not support embedded video players
 									<source src={EquipmentList} type="video/mp4" />
