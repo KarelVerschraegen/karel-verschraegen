@@ -30,5 +30,8 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
+      - name: Formatting
+        run: pnpm fmt:check
+
       - name: Linting
         run: pnpm run lint
