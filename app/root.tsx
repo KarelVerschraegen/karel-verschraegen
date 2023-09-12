@@ -64,7 +64,11 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 
 const Document: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<html lang="en" className="h-full antialiased scroll-smooth font-montserrat text-slate-700 dark:text-slate-300">
+		<html
+			className="h-full antialiased scroll-smooth font-montserrat text-slate-700 dark:text-slate-300"
+			dir="ltr"
+			lang="en"
+		>
 			<head>
 				<Meta />
 				<Links />
