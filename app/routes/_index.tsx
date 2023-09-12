@@ -54,8 +54,8 @@ const Index: FC = () => {
 
 							<Text>
 								Interesting in working together?{" "}
-								<Link to="#contact">
-									<TextStyle variation="fancy">Let's have a chat!</TextStyle>
+								<Link to="#contact" variation="fancy">
+									Let's have a chat!
 								</Link>
 							</Text>
 						</TextContainer>
@@ -76,11 +76,9 @@ const Index: FC = () => {
 							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Software Engineer</TextStyle>{" "}
-									<span className="not-prose">
-										<Link to="https://www.aikido.dev/" external>
-											@ Aikido
-										</Link>
-									</span>
+									<Link to="https://www.aikido.dev/" external className="not-prose">
+										@ Aikido
+									</Link>
 								</Heading>
 
 								<Text>
@@ -108,11 +106,9 @@ const Index: FC = () => {
 							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Tech Lead</TextStyle>{" "}
-									<span className="not-prose">
-										<Link to="https://cheqroom.com" external>
-											@ Cheqroom
-										</Link>
-									</span>
+									<Link to="https://cheqroom.com" external className="not-prose">
+										@ Cheqroom
+									</Link>
 								</Heading>
 
 								<Text>
@@ -144,11 +140,9 @@ const Index: FC = () => {
 							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Full stack TypeScript developer</TextStyle>{" "}
-									<span className="not-prose">
-										<Link to="https://cheqroom.com" external>
-											@ Cheqroom
-										</Link>
-									</span>
+									<Link to="https://cheqroom.com" external className="not-prose">
+										@ Cheqroom
+									</Link>
 								</Heading>
 
 								<Text>
@@ -179,11 +173,9 @@ const Index: FC = () => {
 							<TextContainer>
 								<Heading element="h3">
 									<TextStyle variation="fancy">Intern TypeScript developer</TextStyle>{" "}
-									<span className="not-prose">
-										<Link to="https://getrialto.com" external>
-											@ Rialto
-										</Link>
-									</span>
+									<Link to="https://getrialto.com" external className="not-prose">
+										@ Rialto
+									</Link>
 								</Heading>
 
 								<Text>
@@ -224,8 +216,12 @@ const Index: FC = () => {
 
 							<Text>
 								Interested in the code? You can check it out on{" "}
-								<Link to="https://github.com/KarelVerschraegen/karel-verschraegen" external>
-									<TextStyle variation="fancy">GitHub.</TextStyle>
+								<Link
+									to="https://github.com/KarelVerschraegen/karel-verschraegen"
+									external
+									variation="fancy"
+								>
+									GitHub.
 								</Link>
 							</Text>
 						</TextContainer>
@@ -246,8 +242,8 @@ const Index: FC = () => {
 
 							<Text>
 								Interested in the code? You can check it out on{" "}
-								<Link to="https://github.com/KarelVerschraegen/wisserke" external>
-									<TextStyle variation="fancy">GitHub.</TextStyle>
+								<Link to="https://github.com/KarelVerschraegen/wisserke" external variation="fancy">
+									GitHub.
 								</Link>
 							</Text>
 
@@ -352,8 +348,9 @@ const Index: FC = () => {
 						<Link
 							external
 							to="https://raw.githubusercontent.com/KarelVerschraegen/karel-verschraegen/master/app/assets/pdfs/resume-karel-verschraegen.pdf"
+							variation="fancy"
 						>
-							<TextStyle variation="fancy">my resume</TextStyle>
+							my resume
 						</Link>
 						!
 					</Text>
