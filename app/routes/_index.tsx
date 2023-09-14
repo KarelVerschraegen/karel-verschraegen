@@ -347,7 +347,7 @@ const Index: FC = () => {
 						You can find me on all platforms or check out{" "}
 						<Link
 							external
-							to="https://raw.githubusercontent.com/KarelVerschraegen/karel-verschraegen/master/app/assets/pdfs/resume-karel-verschraegen.pdf"
+							to="https://raw.githubusercontent.com/KarelVerschraegen/karel-verschraegen/master/app/assets/pdfs/karel-verschraegen-resume-simple.pdf"
 							variation="fancy"
 						>
 							my resume
