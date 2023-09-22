@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { Karel, KarelFunny, Wisserke } from "~/assets/images";
+import { Karel, KarelFunny } from "~/assets/images";
 import { EquipmentList, EquipmentListFirstFrame, LiquidEditor, LiquidEditorFirstFrame } from "~/assets/videos";
 import { SOCIALS } from "~/constants/socials";
 import { Grid, Heading, Icon, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
@@ -224,49 +224,6 @@ const Index: FC = () => {
 									GitHub.
 								</Link>
 							</Text>
-						</TextContainer>
-					</li>
-
-					<li>
-						<TextContainer>
-							<Heading element="h3">
-								<TextStyle variation="fancy">Wisserke</TextStyle>
-							</Heading>
-
-							<Text>
-								Wisserke is a <i>very small</i> GitHub bot that I wrote to keep my colleagues
-								entertained. The name 'Wisserke' is a reference to a Belgian TV show called 'Het
-								Eiland'. Whenever you create a pull request with more deletions than additions, Wisserke
-								will post a GIF on your pull request.
-							</Text>
-
-							<Text>
-								Interested in the code? You can check it out on{" "}
-								<Link to="https://github.com/KarelVerschraegen/wisserke" external variation="fancy">
-									GitHub.
-								</Link>
-							</Text>
-
-							<details>
-								<summary>
-									<TextStyle variation="fancy">Learn more</TextStyle>
-								</summary>
-
-								<Text>
-									Wisserke uses Probot to communicate with the GitHub API. It is hosted on Heroku and
-									can be enabled on every GitHub repository! Below is an example of the comments
-									'Wisserke' will post:
-								</Text>
-
-								<Image
-									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
-									alt="Wisserke in action on a GitHub pull request"
-									loading="lazy"
-									src={Wisserke}
-									height={500}
-									width={500}
-								/>
-							</details>
 						</TextContainer>
 					</li>
 
