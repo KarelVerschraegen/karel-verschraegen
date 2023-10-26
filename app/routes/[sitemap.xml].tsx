@@ -1,28 +1,9 @@
+import { generateSitemap } from "@nasa-gcn/remix-seo";
+import { routes } from "@remix-run/dev/server-build";
 import type { LoaderFunction } from "@remix-run/node";
 
-const buildTime = new Date().toISOString();
-
-const content = `
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://karelverschraegen.com/</loc>
-		<lastmod>${buildTime}</lastmod>
-	</url>
-
-	<url>
-		<loc>https://karelverschraegen.com/uses</loc>
-		<lastmod>${buildTime}</lastmod>
-	</url>
-</urlset>
-`;
-
-export const loader: LoaderFunction = () => {
-	return new Response(content, {
-		status: 200,
-		headers: {
-			"Content-Type": "application/xml",
-			"xml-version": "1.0",
-			encoding: "UTF-8",
-		},
+export const loader: LoaderFunction = ({ request }) => {
+	return generateSitemap(request, routes, {
+		siteUrl: "https://www.karelverschraegen.com",
 	});
 };

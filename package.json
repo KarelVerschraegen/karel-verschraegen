@@ -12,6 +12,7 @@
     "fmt:check": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --check"
   },
   "dependencies": {
+    "@nasa-gcn/remix-seo": "^2.0.0",
     "@remix-run/node": "^2.1.0",
     "@remix-run/react": "^2.1.0",
     "@remix-run/serve": "^2.1.0",
