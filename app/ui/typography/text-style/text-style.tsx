@@ -7,9 +7,10 @@ interface Props extends HTMLAttributes<HTMLSpanElement> {
 	variation: Variation;
 }
 
+// FIXME bug in tailwindcss itself, does not append the vendor prefixes for background-clip in chrome
 export const VARIATIONS: Record<Variation, string> = {
-	fancy: "text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500",
-	feisty: "text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500",
+	fancy: "text-transparent bg-clip-text [-webkit-background-clip:text] bg-gradient-to-r from-cyan-500 to-blue-500",
+	feisty: "text-transparent bg-clip-text [-webkit-background-clip:text] bg-gradient-to-r from-red-500 to-amber-500",
 	subdued: "text-slate-500 dark:text-slate-100",
 };
 
