@@ -1,25 +1,24 @@
 import type { FC, SVGAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
+import type { IconName } from "../../@types/icon";
+import spriteSheet from "../../assets/icons/sprite.svg";
+
 type Size = "small" | "medium" | "large";
-type IconSource = FC<any>;
 
 interface Props extends SVGAttributes<SVGElement> {
-	source: IconSource;
+	source: IconName;
 	size: Size;
 }
 
-interface IconSize {
-	height: string;
-	width: string;
-}
-
-const SIZES: Record<Size, IconSize> = {
-	small: { height: "16px", width: "16px" },
-	medium: { height: "24px", width: "24px" },
-	large: { height: "48px", width: "48px" },
+const SIZES: Record<Size, string> = {
+	small: "w-4 h-4",
+	medium: "w-6 h-6",
+	large: "w-12 h-12",
 };
 
-export const Icon: FC<Props> = ({ className = "", source: Source, size = "medium" }) => (
-	<Source className={twMerge(`text-slate-700 dark:text-slate-300`, className)} {...SIZES[size]} />
+export const Icon: FC<Props> = ({ className = "", source, size = "medium" }) => (
+	<svg className={twMerge(`text-slate-700 dark:text-slate-300`, SIZES[size], className)}>
+		<use href={`${spriteSheet}#${source}`} />
+	</svg>
 );
