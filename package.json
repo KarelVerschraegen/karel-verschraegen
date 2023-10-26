@@ -1,43 +1,43 @@
 {
-	"private": true,
-	"sideEffects": false,
-	"scripts": {
-		"build": "npm run build:css && remix build",
-		"build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
-		"dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-		"dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
-		"lint": "eslint . --ext .ts,.tsx --fix",
-		"fmt": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --write",
-		"fmt:check": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --check"
-	},
-	"dependencies": {
+  "name": "personal-website",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "NODE_ENV=production remix build",
+    "dev": "remix dev --manual",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "fmt": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --write",
+    "fmt:check": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --check"
+  },
+  "dependencies": {
     "@remix-run/node": "^2.1.0",
     "@remix-run/react": "^2.1.0",
     "@remix-run/serve": "^2.1.0",
     "@vercel/analytics": "^1.1.1",
     "isbot": "^3.7.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"tailwind-merge": "^1.14.0"
-	},
-	"devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
     "@remix-run/dev": "^2.1.0",
     "@remix-run/eslint-config": "^2.1.0",
-		"@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.10",
     "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.52.0",
-		"eslint-config-prettier": "^9.0.0",
-		"postcss": "^8.4.29",
-		"prettier": "^3.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
-		"tailwindcss": "^3.3.3",
-		"typescript": "^5.2.2",
-		"web-vitals": "^3.4.0"
-	},
-	"engines": {
-		"node": ">=18"
-	}
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "web-vitals": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }

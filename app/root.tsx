@@ -1,4 +1,4 @@
-import type { LinksFunction, LoaderFunction, V2_MetaFunction } from "@remix-run/node";
+import type { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
 	Links,
@@ -15,13 +15,14 @@ import { Analytics } from "@vercel/analytics/react";
 import type { FC, PropsWithChildren } from "react";
 import { useEffect } from "react";
 
+import stylesheet from "~/tailwind.css";
+
 import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { webVitals } from "./lib/vitals";
-import styles from "./styles/app.css";
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digital!";
 
 	return [
@@ -39,7 +40,7 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export const links: LinksFunction = () => [
-	{ rel: "stylesheet", href: styles },
+	{ rel: "stylesheet", href: stylesheet },
 	{
 		rel: "stylesheet",
 		href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
