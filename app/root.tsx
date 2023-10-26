@@ -50,7 +50,7 @@ export const links: LinksFunction = () => [
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<div className="flex flex-col items-center bg-slate-100 dark:bg-slate-900/95 sm:px-8">
-			<div className="w-full max-w-screen-xl min-h-screen p-8 bg-white shadow-xl dark:bg-slate-900 md:px-16 xl:px-24">
+			<div className="min-h-screen w-full max-w-screen-xl bg-white p-8 shadow-xl dark:bg-slate-900 md:px-16 xl:px-24">
 				<div className="flex flex-col gap-16">
 					<Header />
 
@@ -66,7 +66,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 const Document: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<html
-			className="h-full antialiased scroll-smooth font-montserrat text-slate-700 dark:text-slate-300"
+			className="h-full scroll-smooth font-montserrat text-slate-700 antialiased dark:text-slate-300"
 			dir="ltr"
 			lang="en"
 		>

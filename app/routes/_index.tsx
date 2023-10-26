@@ -9,20 +9,20 @@ const Index: FC = () => {
 	return (
 		<div className="flex flex-col gap-16">
 			<header id="about">
-				<Grid className="items-center grid-cols-1 gap-8 justify-items-center lg:grid-cols-4">
+				<Grid className="grid-cols-1 items-center justify-items-center gap-8 lg:grid-cols-4">
 					<Grid.Item className="col-span-2">
-						<div className="relative group">
+						<div className="group relative">
 							<Image
 								alt="Funny Karel Verschraegen"
 								src={KarelFunny}
-								className="absolute inset-0 w-full max-w-lg transition-all duration-300 opacity-0 rounded-xl group-hover:rotate-3 group-hover:opacity-100"
+								className="absolute inset-0 w-full max-w-lg rounded-xl opacity-0 transition-all duration-300 group-hover:rotate-3 group-hover:opacity-100"
 								width={512}
 								height={512}
 							/>
 							<Image
 								alt="Karel Verschraegen"
 								src={Karel}
-								className="relative w-full max-w-lg transition-all duration-300 opacity-100 rounded-xl group-hover:rotate-3 group-hover:opacity-0"
+								className="relative w-full max-w-lg rounded-xl opacity-100 transition-all duration-300 group-hover:rotate-3 group-hover:opacity-0"
 								width={512}
 								height={512}
 							/>
@@ -246,7 +246,7 @@ const Index: FC = () => {
 								</summary>
 
 								<video
-									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
+									className="rounded border border-slate-200 p-4 shadow dark:border-slate-700"
 									controls
 									poster={LiquidEditorFirstFrame}
 									preload="none"
@@ -277,7 +277,7 @@ const Index: FC = () => {
 								</summary>
 
 								<video
-									className="p-4 border rounded shadow border-slate-200 dark:border-slate-700"
+									className="rounded border border-slate-200 p-4 shadow dark:border-slate-700"
 									controls
 									poster={EquipmentListFirstFrame}
 									preload="none"
