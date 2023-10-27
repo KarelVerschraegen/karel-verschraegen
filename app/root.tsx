@@ -17,6 +17,7 @@ import { useEffect } from "react";
 
 import stylesheet from "~/tailwind.css";
 
+import spriteSheet from "./assets/icons/sprite.svg";
 import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
@@ -44,6 +45,12 @@ export const links: LinksFunction = () => [
 	{
 		rel: "stylesheet",
 		href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
+	},
+	{
+		rel: "preload",
+		href: spriteSheet,
+		as: "image",
+		type: "image/svg+xml",
 	},
 ];
 
