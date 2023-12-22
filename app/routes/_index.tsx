@@ -70,6 +70,23 @@ const Index: FC = () => {
 
 				<div className="flex flex-col gap-16">
 					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
+						<TextStyle variation="subdued">November 2023 - present</TextStyle>
+
+						<Grid.Item className="lg:col-span-3">
+							<TextContainer>
+								<Heading element="h3">
+									<TextStyle variation="fancy">Software Engineer</TextStyle>{" "}
+									<Link to="https://www.qargo.io/" external className="not-prose">
+										@ Qargo
+									</Link>
+								</Heading>
+
+								<Text>Transport management software that shifts your business into higher gear.</Text>
+							</TextContainer>
+						</Grid.Item>
+					</Grid>
+
+					<Grid className="grid-cols-1 gap-4 lg:grid-cols-4">
 						<TextStyle variation="subdued">February 2023 - May 2023</TextStyle>
 
 						<Grid.Item className="lg:col-span-3">
