@@ -2,7 +2,6 @@ import type { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/nod
 import { json } from "@remix-run/node";
 import {
 	Links,
-	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
@@ -15,9 +14,8 @@ import { Analytics } from "@vercel/analytics/react";
 import type { FC, PropsWithChildren } from "react";
 import { useEffect } from "react";
 
-import stylesheet from "~/tailwind.css";
+import "~/tailwind.css";
 
-import spriteSheet from "./assets/icons/sprite.svg";
 import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
@@ -41,16 +39,9 @@ export const meta: MetaFunction = () => {
 };
 
 export const links: LinksFunction = () => [
-	{ rel: "stylesheet", href: stylesheet },
 	{
 		rel: "stylesheet",
 		href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
-	},
-	{
-		rel: "preload",
-		href: spriteSheet,
-		as: "image",
-		type: "image/svg+xml",
 	},
 ];
 
@@ -86,7 +77,6 @@ const Document: FC<PropsWithChildren> = ({ children }) => {
 
 				<ScrollRestoration />
 				<Scripts />
-				<LiveReload />
 				<Analytics />
 			</body>
 		</html>

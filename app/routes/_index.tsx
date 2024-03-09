@@ -1,7 +1,5 @@
 import type { FC } from "react";
 
-import { Karel, KarelFunny } from "~/assets/images";
-import { EquipmentList, EquipmentListFirstFrame, LiquidEditor, LiquidEditorFirstFrame } from "~/assets/videos";
 import { SOCIALS } from "~/constants/socials";
 import { Grid, Heading, Icon, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
 
@@ -14,14 +12,14 @@ const Index: FC = () => {
 						<div className="group relative">
 							<Image
 								alt="Funny Karel Verschraegen"
-								src={KarelFunny}
+								src="/assets/images/karel-funny.webp"
 								className="absolute inset-0 w-full max-w-lg rounded-xl opacity-0 transition-all duration-300 group-hover:rotate-3 group-hover:opacity-100"
 								width={512}
 								height={512}
 							/>
 							<Image
 								alt="Karel Verschraegen"
-								src={Karel}
+								src="/assets/images/karel.webp"
 								className="relative w-full max-w-lg rounded-xl opacity-100 transition-all duration-300 group-hover:rotate-3 group-hover:opacity-0"
 								width={512}
 								height={512}
@@ -265,11 +263,11 @@ const Index: FC = () => {
 								<video
 									className="rounded border border-slate-200 p-4 shadow dark:border-slate-700"
 									controls
-									poster={LiquidEditorFirstFrame}
+									poster="/assets/videos/liquid-editor-first-frame.webp"
 									preload="none"
 								>
 									This browser does not support embedded video players
-									<source src={LiquidEditor} type="video/mp4" />
+									<source src="/assets/videos/liquid-editor.mp4" type="video/mp4" />
 								</video>
 							</details>
 						</TextContainer>
@@ -296,11 +294,11 @@ const Index: FC = () => {
 								<video
 									className="rounded border border-slate-200 p-4 shadow dark:border-slate-700"
 									controls
-									poster={EquipmentListFirstFrame}
+									poster="/assets/videos/equipment-list-first-frame.webp"
 									preload="none"
 								>
 									This browser does not support embedded video players
-									<source src={EquipmentList} type="video/mp4" />
+									<source src="/assets/videos/equipment-list.mp4" type="video/mp4" />
 								</video>
 							</details>
 						</TextContainer>

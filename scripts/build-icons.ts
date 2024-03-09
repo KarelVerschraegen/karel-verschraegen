@@ -5,7 +5,7 @@ import * as path from "node:path";
 
 const cwd = process.cwd();
 const inputDir = path.join(cwd, "assets", "icons");
-const outputDir = path.join(cwd, "app", "assets", "icons");
+const outputDir = path.join(cwd, "public", "assets", "icons");
 const typesDir = path.join(cwd, "app", "@types");
 
 const files = glob

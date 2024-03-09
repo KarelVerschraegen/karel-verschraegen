@@ -1,6 +1,5 @@
 import type { FC } from "react";
 
-import { KarelFunny } from "~/assets/images";
 import { Grid, Heading, Image, Link, Text, TextContainer, TextStyle } from "~/ui";
 
 interface ErrorProps {
@@ -31,7 +30,7 @@ export const Error: FC<ErrorProps> = ({ error }) => {
 			<Image
 				alt="Funny Karel Verschraegen"
 				className="w-full max-w-lg rounded-xl"
-				src={KarelFunny}
+				src="/assets/images/karel-funny.webp"
 				width={512}
 				height={512}
 			/>

@@ -4,12 +4,13 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "bun run build:icons && NODE_ENV=production remix build",
-    "build:icons": "node --loader tsm ./scripts/build-icons.ts",
-    "dev": "bun run build:icons && remix dev --manual",
+    "build": "remix vite:build",
+    "build:icons": "bun run ./scripts/build-icons.ts",
+    "dev": "remix vite:dev",
     "lint": "eslint . --ext .ts,.tsx --fix",
     "fmt": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --write",
-    "fmt:check": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --check"
+    "fmt:check": "prettier 'app/**/*.{js,ts,jsx,tsx,json}' --check",
+    "start": "remix-serve ./build/server/index.js"
   },
   "dependencies": {
     "@nasa-gcn/remix-seo": "^2.0.0",
@@ -38,8 +39,9 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.1",
-    "tsm": "^2.3.0",
     "typescript": "^5.4.2",
+    "vite": "^5.1.5",
+    "vite-tsconfig-paths": "^4.3.1",
     "web-vitals": "^3.5.2"
   },
   "engines": {

@@ -2,7 +2,6 @@ import type { FC, SVGAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
 import type { IconName } from "../../@types/icon";
-import spriteSheet from "../../assets/icons/sprite.svg";
 
 type Size = "small" | "medium" | "large";
 
@@ -19,6 +18,6 @@ const SIZES: Record<Size, string> = {
 
 export const Icon: FC<Props> = ({ className = "", source, size = "medium" }) => (
 	<svg className={twMerge(`text-slate-700 dark:text-slate-300`, SIZES[size], className)}>
-		<use href={`${spriteSheet}#${source}`} />
+		<use href={`/assets/icons/sprite.svg#${source}`} />
 	</svg>
 );

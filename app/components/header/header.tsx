@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 
-import { Karel } from "~/assets/images";
 import { Avatar, Heading, NavLink, TextStyle } from "~/ui";
 
 const ROUTES = [
@@ -14,7 +13,7 @@ export const Header = () => {
 	return (
 		<header className="flex items-center justify-end border-b border-slate-200 pb-4 md:justify-between dark:border-slate-700">
 			<Link to="/" className="pointer-events-auto hidden items-center gap-4 md:flex" aria-label="Home">
-				<Avatar src={Karel} alt="Karel Verschraegen" />
+				<Avatar src="/assets/images/karel.webp" alt="Karel Verschraegen" />
 
 				<Heading element="h1" className="text-2xl">
 					<TextStyle variation="fancy">Karel Verschraegen</TextStyle>
