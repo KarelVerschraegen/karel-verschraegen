@@ -13,36 +13,36 @@
   },
   "dependencies": {
     "@nasa-gcn/remix-seo": "^2.0.0",
-    "@remix-run/node": "^2.1.0",
-    "@remix-run/react": "^2.1.0",
-    "@remix-run/serve": "^2.1.0",
-    "@vercel/analytics": "^1.1.1",
-    "isbot": "^4.4.0",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
+    "@vercel/analytics": "^1.2.2",
+    "isbot": "^5.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.1.0",
-    "@remix-run/eslint-config": "^2.1.0",
+    "@remix-run/dev": "^2.8.1",
+    "@remix-run/eslint-config": "^2.8.1",
     "@tailwindcss/typography": "^0.5.10",
-    "@trivago/prettier-plugin-sort-imports": "^4.2.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.52.0",
-    "eslint-config-prettier": "^9.0.0",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "glob": "^10.3.10",
-    "node-html-parser": "^6.1.11",
-    "postcss": "^8.4.29",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.6",
-    "tailwindcss": "^3.3.3",
+    "node-html-parser": "^6.1.12",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "tailwindcss": "^3.4.1",
     "tsm": "^2.3.0",
-    "typescript": "^5.2.2",
-    "web-vitals": "^3.4.0"
+    "typescript": "^5.4.2",
+    "web-vitals": "^3.5.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }
