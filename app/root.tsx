@@ -1,25 +1,13 @@
-import type { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import {
-	Links,
-	Meta,
-	Outlet,
-	Scripts,
-	ScrollRestoration,
-	useLoaderData,
-	useLocation,
-	useRouteError,
-} from "@remix-run/react";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, useRouteError } from "@remix-run/react";
 import { Analytics } from "@vercel/analytics/react";
 import type { FC, PropsWithChildren } from "react";
-import { useEffect } from "react";
 
 import "~/tailwind.css";
 
 import { Error } from "./components/error/error";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
-import { webVitals } from "./lib/vitals";
 
 export const meta: MetaFunction = () => {
 	const description = "Karel Verschraegen, a TypeScript developer passionate about all things digital!";
@@ -83,24 +71,7 @@ const Document: FC<PropsWithChildren> = ({ children }) => {
 	);
 };
 
-export const loader: LoaderFunction = () => {
-	return json({
-		ENV: {
-			VERCEL_ANALYTICS_ID: process.env.VERCEL_ANALYTICS_ID as string,
-		},
-	});
-};
-
 const App: FC = () => {
-	const data = useLoaderData<typeof loader>();
-	const location = useLocation();
-
-	useEffect(() => {
-		if (data.ENV.VERCEL_ANALYTICS_ID) {
-			webVitals({ path: location.pathname, analyticsId: data.ENV.VERCEL_ANALYTICS_ID });
-		}
-	}, [location]);
-
 	return (
 		<Document>
 			<Layout>
